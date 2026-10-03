@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Rakat Keeper | Warsha Apps LLC</title>
+  <meta name="description" content="Privacy policy for Rakat Keeper, an Android app published by Warsha Apps LLC.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="site-container">
+    <header class="hero">
+      <a href="/" class="back-link">Warsha Apps LLC</a>
+    </header>
+
+    <main id="main" class="policy">
+      <h1>Privacy Policy — Rakat Keeper</h1>
+      <p>Last updated: October 3, 2026</p>
+      <p>This policy applies to Rakat Keeper, an Android app published by Warsha Apps LLC.</p>
+      <p><strong>In short:</strong> Rakat Keeper collects nothing, stores everything only on your device, and has no network access at all.</p>
+
+      <h2>No Data Collection</h2>
+      <p>Rakat Keeper does not collect, transmit, or share any personal data, usage data, or analytics of any kind. The app has no user accounts, no cloud sync, and no connection to any server, because it does not request network access on your device in the first place — this is a hard technical constraint, not a configurable setting.</p>
+      <p>The app contains no third-party advertising, analytics, or crash-reporting libraries.</p>
+
+      <h2>What Data the App Handles, and Where It Stays</h2>
+      <p>All data described below is created and stored exclusively on your device. None of it is ever transmitted anywhere by the app.</p>
+      <ul>
+        <li>Prayer history — the prayer name, rakat count, and completion timestamp for each session you complete, stored locally in an on-device database.</li>
+        <li>Last-selected prayer — a small local preference remembering which prayer you picked most recently, so it can be highlighted next time you open the app.</li>
+        <li>Motion sensor data (accelerometer) — used while a hands-free prayer session is active to detect posture changes (e.g. sitting for tashahhud). This data is held in memory only while a session is active and is never written to storage.</li>
+      </ul>
+      <p>This data is not included in Android's automatic cloud backup, and the app also excludes it from Android 12+ device-to-device transfer, so it never leaves your device through those channels either.</p>
+
+      <h2>Exporting Your Own Data</h2>
+      <p>The app lets you export your prayer history as a CSV file, or export/restore a full JSON backup, entirely at your own initiative. Exports are generated locally and either handed to Android's standard system share sheet or saved to a location you choose with Android's system file picker. You choose where the file goes. If you choose a cloud storage provider (for example, Google Drive), that provider, not this app, uploads the file. The app itself never uploads or transmits this data anywhere.</p>
+      <p>Temporary copies of exports prepared for the share sheet are kept in the app's private storage. Creating a new backup removes older backup files from that storage, and Clear All History also removes them on a best-effort basis.</p>
+
+      <h2>Permissions the App Requests, and Why</h2>
+      <ul>
+        <li><code>VIBRATE</code> — for the quiet haptic cue during hands-free tracking. No data is involved.</li>
+        <li><code>FOREGROUND_SERVICE</code> and <code>FOREGROUND_SERVICE_HEALTH</code> — required by Android to run the motion-tracking service (checking phone posture) while your phone is in your pocket during a hands-free session.</li>
+        <li><code>HIGH_SAMPLING_RATE_SENSORS</code> — allows more frequent accelerometer readings for reliable posture detection.</li>
+        <li><code>POST_NOTIFICATIONS</code> (Android 13+, requested at runtime) — used solely to show the required ongoing notification while the foreground tracking service is active. Not used for any other messaging.</li>
+      </ul>
+      <p>The app requests no other permissions. It does not request location, contacts, microphone, camera, storage, or network access.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>Rakat Keeper does not knowingly collect any information from anyone, including children, because it does not collect information from anyone at all.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>If a future version of the app changes how it handles data, this page will be updated accordingly and the "Last updated" date above will change. We encourage checking back if you have concerns, though given the app's no-network design, any such change would need to be a deliberate, visible shift in the app's architecture, not a silent one.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy or the app can be sent to <a href="mailto:ws.devbuilds@gmail.com">ws.devbuilds@gmail.com</a> or raised via <a href="https://github.com/PlatoonHero/rakat-keeper-issues/issues">GitHub Issues</a>. Please do not post personal information in public GitHub issues.</p>
+    </main>
+
+    <footer>
+      <nav class="footer-nav" aria-label="Support and policies">
+        <ul class="footer-links">
+          <li><a href="https://github.com/PlatoonHero/rakat-keeper-issues">Issues &amp; Support</a></li>
+          <li><a href="mailto:ws.devbuilds@gmail.com">Contact: ws.devbuilds@gmail.com</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2026 Warsha Apps LLC</p>
+    </footer>
+  </div>
+</body>
+</html>

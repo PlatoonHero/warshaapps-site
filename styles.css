@@ -335,3 +335,43 @@ a:hover {
     transition: none !important;
   }
 }
+
+.policy {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.policy h1 {
+  text-align: left;
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem;
+}
+
+.policy h2 {
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 2rem 0 0.75rem;
+}
+
+.policy p,
+.policy li {
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.policy ul {
+  padding-left: 1.25rem;
+}
+
+.policy li {
+  margin-bottom: 0.5rem;
+}
+
+.policy code {
+  font-size: 0.875em;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  color: var(--text-main);
+}
