@@ -278,10 +278,12 @@ a {
   min-height: 44px;
 }
 
-.footer-links a:hover,
-.back-link:hover,
-a:hover {
-  color: var(--accent-hover);
+@media (hover: hover) {
+  .footer-links a:hover,
+  .back-link:hover,
+  a:hover {
+    color: var(--accent-hover);
+  }
 }
 
 :focus-visible {
@@ -347,10 +349,27 @@ a:hover {
   margin: 0 0 0.75rem;
 }
 
+.summary-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--text-main);
+}
+
 .policy h2 {
   text-align: left;
   font-size: 1.2rem;
   margin: 2rem 0 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--card-border);
+}
+
+.policy .summary-box + h2 {
+  border-top: none;
+  padding-top: 0;
 }
 
 .policy p,
