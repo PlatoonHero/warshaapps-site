@@ -158,13 +158,24 @@ h2 {
 }
 
 .app-card {
+  position: relative;
+  overflow: hidden;
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-left: 3px solid var(--accent-color);
   border-radius: 8px;
   padding: 1.75rem;
   text-align: left;
   transition: border-color 150ms ease;
+}
+
+.app-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  background-color: var(--accent-color);
 }
 
 @media (hover: hover) {
@@ -174,7 +185,6 @@ h2 {
 
   .app-card:hover {
     border-color: rgba(16, 185, 129, 0.4);
-    border-left-color: var(--accent-color);
   }
 }
 
