@@ -17,7 +17,7 @@
 
     <main id="main" class="policy">
       <h1>Privacy Policy — Rakat Keeper</h1>
-      <p>Last updated: October 10, 2026</p>
+      <p>Last updated: October 18, 2026</p>
       <p>This policy applies to Rakat Keeper, an Android app published by Warsha Apps LLC.</p>
       <div class="summary-box">
         <strong>In short: Rakat Keeper collects nothing, stores everything only on your device, and has no network access at all.</strong>
@@ -52,8 +52,9 @@
         <li><code>FOREGROUND_SERVICE</code> and <code>FOREGROUND_SERVICE_HEALTH</code> — required by Android to run the motion-tracking service (checking phone posture) while your phone is in your pocket during a hands-free session.</li>
         <li><code>HIGH_SAMPLING_RATE_SENSORS</code> — allows more frequent accelerometer readings for reliable posture detection.</li>
         <li><code>POST_NOTIFICATIONS</code> (Android 13+, requested at runtime) — used solely to show the required ongoing notification while the foreground tracking service is active. Not used for any other messaging.</li>
+        <li><code>com.warshaapps.rakatkeeper.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> — an internal permission named after this app's own package. It is not declared in the app's own source code and is added automatically during the app's build. You are never asked to approve it, and no data is involved.</li>
       </ul>
-      <p>The app requests no other permissions. It does not request location, contacts, microphone, camera, storage, or network access.</p>
+      <p>Apart from the permissions listed above, the app requests no others. It does not request location, contacts, microphone, camera, storage, or network access.</p>
 
       <h2>Children's Privacy</h2>
       <p>Rakat Keeper does not knowingly collect any information from anyone, including children, because the app itself collects no personal information.</p>
